@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	 <!-- Classic Content -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Activity App for City4Age Project (EU H2020) - IPAL (CNRS)">
+	<meta name="author" content="Antoine de Marassé">
+	 <!-- Website Name and browser icon -->
+	<title>Activity App</title>
+	<link rel="icon" href="img/logo-activity-app.ico">
+	 <!-- Link the Style Sheets & fonts -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/modern-business.css" rel="stylesheet">
+	<link href="font/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/c4a-uiux.css" rel="stylesheet">
+</head>
+
+<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="container">
+						<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="index.html">Activity App</a>
+						</div>
+						<!-- /.navbar-header -->
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+								<ul class="nav navbar-nav navbar-right">
+										<li><a href="services.html">Services</a></li>
+										<li><a href="services.html">Login</a></li>
+								</ul>
+						</div>
+						<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container -->
+		</nav>
+
+<div class="container">
+	 <hr>
+	 <div class="row">
+			<!-- COLUMN ONE -->
+			<div class="col-sm-6 col-md-4">
+				 <!-- LINE CHART WIDGET -->    
+				 <div id="line-chart-widget" class="panel">
+						<div class="panel-heading">
+							 <h4 class="text-uppercase"><strong>Activity of Daily Living</strong><span class="label pull-right">(Number%)</span><br><small>Update 18:20:54</small></h4>
+						</div>
+						<div class="panel-body">
+							 <canvas id="myLineChart"></canvas>
+						</div>
+						<div class="panel-footer">
+							 <div class="list-block">
+									<ul class="text-center legend">
+										 <li><h3>Number</h3>Indicator</li>
+										 <li><h3>Percentage</h3>Indicator</li>
+									</ul>
+							 </div>
+							 <div class="chart-block clearfix">
+									<div class="pull-left">
+										 Monthly Average
+										 <canvas id="myBarChart"></canvas>
+									</div>
+									<div class="pull-right">
+										 Week Change<br>
+										 <div class="change text-center"><i class="fa fa-plus"></i>2,3% </div>
+									</div>
+							 </div>
+						</div>
+				 </div>
+				 
+			</div>
+			<!-- /.column one -->
+				
+			<!-- COLUMN TWO -->   
+			<div class="col-sm-6 col-md-4">
+				 <!-- CHART WIDGET -->    
+				 <div id="pie-chart-widget" class="panel">
+						<div class="panel-heading text-center">
+							 <h5 class="text-uppercase"><strong>Activity Tracker</strong></h5>
+						</div>
+						<div class="panel-body">
+							 <canvas id="myPieChart"></canvas>
+						</div>
+						<div class="panel-footer">
+							 <div class="list-block">
+									<ul class="text-center legend">
+										 <li class="Activity1" style="margin-right: 1px;">
+												Sleep time
+												<h2>32%</h2>
+										 </li>
+										 <li class="Activity2">
+												Outside Events
+												<h2>21%</h2>
+										 </li>
+										 <li class="Activity3" style="margin-left: 1px;">
+												SAC Activities
+												<h2>18%</h2>
+										 </li>
+									</ul>
+							 </div>
+							 <div class="btn-group btn-group-justified text-uppercase text-center">
+				 <!-- Get all the icons at: http://fontawesome.io/icons/ -->
+									<a class="btn btn-default" role="button"><i class="fa fa-users fa-2x"></i><br><small>View Sleep</small></a>
+									<a class="btn btn-default" role="button"><i class="fa fa-calendar fa-2x"></i><br><small>Events Calendar</small></a>
+									<a class="btn btn-default" role="button"><i class="fa fa-users fa-2x"></i><br><small>View SAC</small></a>
+							 </div>
+						</div>
+				 </div>
+				 <!-- LOGIN WIDGET -->             
+				 <div id="login-widget" class="panel" >
+						<form id="loginform" class="form-horizontal" role="form">
+							 <div class="panel-heading text-center">
+									<h5 class="text-uppercase"><strong>Login to your account</strong></h5>
+							 </div>
+							 <div class="panel-body">
+									<label for="login-email">Email</label>
+									<div class="input-group">
+										 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										 <input id="login-email" type="text" class="form-control input-lg" name="email" value="" placeholder="email">
+									</div>
+									<label for="login-email">Password</label>
+									<div class="input-group">
+										 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+										 <input id="login-password" type="password" class="form-control input-lg" name="password" placeholder="password">
+									</div>
+							 </div>
+							 <div class="panel-footer text-center">
+									<div class="login-btn">
+										 <a href="#" class="btn btn-ui btn-lg btn-block mrg-btm-10"><i class="fa fa-play-circle"></i> Sign In</a>
+										 <a href="#"><small>Forgot Username or Password?</small></a>
+									</div>
+									<a href="#" class="facebook"><i class="fa fa-lg fa-facebook-square"></i> Login with Facebook</a>             
+							 </div>
+						</form>
+				 </div>
+			</div>
+			<!-- /.column two -->
+			
+			<!-- COLUMN THREE -->
+			<div class="col-sm-6 col-md-4 ">
+				 <!-- PROFILE WIDGET  -->
+				 <div id="profile-widget" class="panel">
+						<div class="panel-heading">
+						</div>
+						<div class="panel-body">
+							 <div class="media">
+									<a class="pull-left" href="#">
+									<img class="media-object img-circle" src="http://asia.eseosolutions.netdna-cdn.com/images/favicon.png">
+									</a>
+									<div class="media-body">
+										 <h2>Hello, "Ms Tan"</h2>
+										 How are you today? Any special activity?
+									</div>
+							 </div>
+						</div>
+						<div class="panel-footer">
+							 <div class="btn-group btn-group-justified">
+									<a class="btn btn-default" role="button"><i class="fa fa-eye"></i> 172</a>
+									<a class="btn btn-default" role="button"><i class="fa fa-comment"></i> 34</a>
+									<a class="btn btn-default highlight" role="button"><i class="fa fa-heart"></i> 210</a>
+							 </div>
+						</div>
+				 </div>
+				 <!-- USER WIDGET -->
+				 <div id="user-widget" class="list-group">
+						<div class="list-group-item heading">
+							 <img class="media-object img-circle" src="https://i.yomyomf.com/wp-content/uploads/2013/02/plaque2.jpg">
+							 <div class="text-wrap">
+									<h4 class="list-group-item-heading">Auntie Tan</h4>
+									<p class="list-group-item-text">#07-25, 62 Geylang Bahru</p>
+							 </div>
+							 <div class="clearfix"></div>
+						</div>
+						<a href="#" class="list-group-item">
+							 <i class="fa fa-user fa-lg pull-right"></i>
+							 <p class="list-group-item-text">User Profile</p>
+						</a>
+						<a href="#" class="list-group-item">
+							 <i class="fa fa-bar-chart-o fa-lg pull-right"></i>
+							 <p class="list-group-item-text">ADL Statistics</p>
+						</a>
+						<a href="#" class="list-group-item">
+							 <i class="fa fa-wrench fa-lg pull-right"></i>
+							 <p class="list-group-item-text">Settings</p>
+						</a>
+						<a href="#" class="list-group-item">
+							 <i class="fa fa-calendar fa-lg pull-right"></i>
+							 <p class="list-group-item-text">Events</p>
+						</a>
+				 </div>
+			</div>
+			<!-- /.column three -->
+	 </div>
+</div>
+</div>
+<!-- /.container -->
+
+		<div class="container">
+				<footer>
+						<div class="row">
+								<div class="col-lg-12">
+										<p>Copyright &copy; 2016 - City4Age Project (IPAL, CNRS)</p>
+								</div>
+						</div>
+				</footer>
+
+		</div>
+		<!-- /.container -->
+
+	<!-- JavaScript -->
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/modern-business.js"></script>
+	<!-- Docs at http://simpleweatherjs.com -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
+	<!-- Docs at http://www.chartjs.org -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.js"></script>	
+	<script src="js/script.js"></script>
+
+</body>
+</html>

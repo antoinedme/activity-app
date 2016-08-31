@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	 <!-- Classic Content -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Activity App for City4Age Project (EU H2020) - IPAL (CNRS)">
+	<meta name="author" content="Antoine de Marassé">
+	 <!-- Website Name and browser icon -->
+	<title>Activity App</title>
+	<link rel="icon" href="img/logo-activity-app.ico">
+	 <!-- Link the Style Sheets & fonts -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/modern-business.css" rel="stylesheet">
+	<link href="font/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/c4a-uiux.css" rel="stylesheet">
+</head>
+
+<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="container">
+						<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="index.html">Activity App</a>
+						</div>
+						<!-- /.navbar-header -->
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+								<ul class="nav navbar-nav navbar-right">
+										<li><a href="services.html">Services</a></li>
+										<li><a href="services.html">Login</a></li>
+								</ul>
+						</div>
+						<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container -->
+		</nav>
+
+<div class="container">
+	 <hr>
+	 <div class="row">
+			<!-- COLUMN ONE -->
+			<div class="col-sm-6 col-md-4">
+			<div id="pie-chart-widget" class="panel">
+						<div class="panel-heading text-center">
+							 <h5 class="text-uppercase"><strong>Activity Tracker</strong></h5>
+						</div>
+						<div class="panel-body">
+							 <canvas id="myPieChart"></canvas>
+						</div>
+						<div class="panel-footer">
+							 <div class="list-block">
+									<ul class="text-center legend">
+										 <li class="Activity1" style="margin-right: 1px;">
+												Sleep time
+												<h2>32%</h2>
+										 </li>
+										 <li class="Activity2">
+												Outside Events
+												<h2>21%</h2>
+										 </li>
+										 <li class="Activity3" style="margin-left: 1px;">
+												SAC Activities
+												<h2>18%</h2>
+										 </li>
+									</ul>
+							 </div>
+							 <div class="btn-group btn-group-justified text-uppercase text-center">
+				 <!-- Get all the icons at: http://fontawesome.io/icons/ -->
+									<a class="btn btn-default" role="button"><i class="fa fa-users fa-2x"></i><br><small>View Sleep</small></a>
+									<a class="btn btn-default" role="button"><i class="fa fa-calendar fa-2x"></i><br><small>Events Calendar</small></a>
+									<a class="btn btn-default" role="button"><i class="fa fa-users fa-2x"></i><br><small>View SAC</small></a>
+							 </div>
+						</div>
+				 </div>
+				 </div>
+			</div>
+			<!-- /.column one -->
+				
+			
+</div>
+<!-- /.container -->
+
+		<div class="container">
+				<footer>
+						<div class="row">
+								<div class="col-lg-12">
+										<p>Copyright &copy; 2016 - City4Age Project (IPAL, CNRS)</p>
+								</div>
+						</div>
+				</footer>
+
+		</div>
+		<!-- /.container -->
+
+	<!-- JavaScript -->
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/modern-business.js"></script>
+	<!-- Docs at http://simpleweatherjs.com -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
+	<!-- Docs at http://www.chartjs.org -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.js"></script>	
+	<script src="js/script.js"></script>
+
+</body>
+</html>

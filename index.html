@@ -15,6 +15,7 @@
 	<link href="css/modern-business.css" rel="stylesheet">
 	<link href="font/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/c4a-uiux.css" rel="stylesheet">
+	<link href="css/bar-chart.css" rel="stylesheet">
 </head>
 
 <body>
@@ -53,10 +54,47 @@
 							 <h5 class="text-uppercase"><strong>Activity Tracker 1</strong></h5>
 						</div>
 						<div class="panel-body">
-							 <canvas id="myPieChart"></canvas>
-						</div>
+							 <div class="bar-chart">
+			                <div class="chart clearfix">
+			                    <div class="item">
+			                        <div class="bar">
+			                            <span class="percent">92%</span>
+			                            <div class="item-progress" data-percent="92">
+			                                <span class="title">Indoor</span>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div class="item">
+			                        <div class="bar">
+			                            <span class="percent">71%</span>
+			            
+			                            <div class="item-progress" data-percent="71">
+			                                <span class="title">Cooking</span>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div class="item">
+			                        <div class="bar">
+			                            <span class="percent">82%</span>
+			            
+			                            <div class="item-progress" data-percent="82">
+			                                <span class="title">Toilet</span>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div class="item">
+			                        <div class="bar">
+			                            <span class="percent">67%</span>
+			                            <div class="item-progress" data-percent="67">
+			                                <span class="title">Sleeping</span>
+			                            </div>
+			                        </div>
+			                    </div>
+			                </div>
+            			</div>
+						</div> <!-- //.panel body -->
 						<div class="panel-footer">
-							 <div class="list-block">
+							<div class="list-block">
 									<ul class="text-center legend">
 										 <li class="Activity1" style="margin-right: 1px;">
 												Indoor Indicator
@@ -71,12 +109,11 @@
 												<h2>18%</h2>
 										 </li>
 									</ul>
-							 </div>
-							 <div class="btn-group btn-group-justified text-uppercase text-center">
-				 <!-- Get all the icons at: http://fontawesome.io/icons/ -->
-									<a class="btn btn-default" role="button"><i class="fa fa-smile-o fa-2x"></i><br><small>View Activities</small></a>
-									<a class="btn btn-default" role="button"><i class="fa fa-calendar fa-2x"></i><br><small>Events Calendar</small></a>
-									<a class="btn btn-default" role="button"><i class="fa fa-users fa-2x"></i><br><small>View SAC</small></a>
+							</div>
+							<div class="btn-group btn-group-justified text-uppercase text-center">
+								<a class="btn btn-default" role="button"><i class="fa fa-smile-o fa-2x"></i><br><small>View Activities</small></a>
+								<a class="btn btn-default" role="button"><i class="fa fa-calendar fa-2x"></i><br><small>Events Calendar</small></a>
+								<a class="btn btn-default" role="button"><i class="fa fa-users fa-2x"></i><br><small>View SAC</small></a>
 							 </div>
 						</div>
 				 </div>
@@ -173,11 +210,12 @@
 
 	<!-- JavaScript -->
 	<script src="js/jquery-1.10.2.js"></script>
+	<!-- Theme script -->
 	<script src="js/bootstrap.js"></script>
 	<script src="js/modern-business.js"></script>
-	<!-- Docs at http://simpleweatherjs.com -->
+	<!-- Custom scripts -->
+	<script src="js/bar-chart.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
-	<!-- Docs at http://www.chartjs.org -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.js"></script>	
 	<script src="js/script.js"></script>

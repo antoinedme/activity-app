@@ -16,6 +16,8 @@
 	<link href="font/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/c4a-uiux.css" rel="stylesheet">
 	<link href="css/bar-chart.css" rel="stylesheet">
+	<link href="css/percircle.css" rel="stylesheet">
+	<link href="css/center.css" rel="stylesheet">
 </head>
 
 <body>
@@ -51,7 +53,7 @@
 				 <!-- WIDGET -->    
 				 <div id="pie-chart-widget" class="panel">
 						<div class="panel-heading text-center">
-							 <h5 class="text-uppercase"><strong>Activity Tracker 1</strong></h5>
+							 <h5 class="text-uppercase"><strong>Activity Tracker</strong></h5>
 						</div>
 						<div class="panel-body">
 							 <div class="bar-chart">
@@ -122,14 +124,29 @@
 				
 			<!-- COLUMN TWO -->   
 			<div class="col-sm-6 col-md-4">
-				 <!-- WIDGET -->    
-				 <!-- WIDGET -->    
+				 <!-- WIDGET -->      
 				 <div id="pie-chart-widget" class="panel">
 						<div class="panel-heading text-center">
-							 <h5 class="text-uppercase"><strong>Sleep Tracker 1</strong></h5>
+							 <h5 class="text-uppercase"><strong>Sleep Tracker</strong></h5>
 						</div>
 						<div class="panel-body">
-							 <canvas id="myPieChart"></canvas>
+							 <div class="center-div">
+							 <div id="bluecircle" data-percent="86" data-text="Good!" class="big"> </div>
+							 </div>
+							 
+							<!-- custom text 
+							<div id="pinkcircle" data-text="work" data-percent="65" class="red big"></div> 
+							<div id="custom" class="yellow big"></div> 
+							<div id="clock" class="purple big"></div>
+							<div id="custom-color" class="big"></div>
+							<div id="countdown" class="big"></div>
+							<div id="bluecircle" data-text="rest" data-percent="87" class="purple"></div>
+							<div id="bluecircle" data-text="rest" data-percent="87" class="pink"></div>
+							text -->
+						</div>
+						<div class="panel-body">
+							<div class="panel-heading text-center">
+								<h3>Sleep duration: <span style="color:green">8 hours</span></h3></div>
 						</div>
 						<div class="panel-footer">
 							 <div class="list-block">
@@ -147,12 +164,6 @@
 												<h2>9:35</h2>
 										 </li>
 									</ul>
-							 </div>
-							 <div class="btn-group btn-group-justified text-uppercase text-center">
-				 <!-- Get all the icons at: http://fontawesome.io/icons/ -->
-									<a class="btn btn-default" role="button"><i class="fa fa-moon-o fa-2x"></i><br><small>View Sleep</small></a>
-									<a class="btn btn-default" role="button"><i class="fa fa-sun-o fa-2x"></i><br><small>Statistics</small></a>
-									<a class="btn btn-default" role="button"><i class="fa fa-location-arrow   fa-2x"></i><br><small>Time awake</small></a>
 							 </div>
 						</div>
 				 </div>
@@ -218,7 +229,10 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.js"></script>	
-	<script src="js/script.js"></script>
+	<!--<script src="js/script.js"></script> -->
+	<script src="js/percircle.js"></script>
+	<script src="js/percircle2.js"></script>
+
 
 </body>
 </html>

@@ -1,8 +1,6 @@
-# activity-app
 ## Docs:
 
-HTML + CSS + JS Mockup
-(Docs to be added here)
+HTML + CSS + JS Mockup : client-side of the Ubismart platform (based on sails.js, node.js MVC framework with support of real-time features via socket.io)
 
 ## Use of bar-chart.css:
 

@@ -16,6 +16,7 @@
 	<link href="font/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/c4a-uiux.css" rel="stylesheet">
 	<link href="css/bar-chart.css" rel="stylesheet">
+	<link href="css/column-chart.css" rel="stylesheet">
 	<link href="css/percircle.css" rel="stylesheet">
 	<link href="css/center.css" rel="stylesheet">
 </head>
@@ -174,7 +175,80 @@
 			
 			<!-- COLUMN THREE -->
 			<div class="col-sm-6 col-md-4 ">
-				 
+				 <!-- WEEKLY ACTIVITY VIEW -->
+				<div id="pie-chart-widget" class="panel">
+						<div class="panel-heading text-center">
+							 <h5 class="text-uppercase"><strong>Week ADL indoor</strong></h5>
+						</div>
+						<div class="panel-body">
+							 <div class="column-chart">
+
+                <div class="chart clearfix">
+                    <div class="item">
+                        <div class="bar">
+                            <span class="percent">MON</span>
+                            <div class="item-progress" data-percent="92">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="item">
+                        <div class="bar">
+                            <span class="percent">TUE</span>
+                            <div class="item-progress" data-percent="71">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="item">
+                        <div class="bar">
+                            <span class="percent">WED</span>
+                            <div class="item-progress" data-percent="82">
+                                <span class="title"></span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="item">
+                        <div class="bar">
+                            <span class="percent">THU</span>
+            
+                            <div class="item-progress" data-percent="58">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="item">
+                        <div class="bar">
+                            <span class="percent">FRI</span>
+                            <div class="item-progress" data-percent="67">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="bar">
+                            <span class="percent">SAT</span>
+                            <div class="item-progress" data-percent="37">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="bar">
+                            <span class="percent">SUN</span>
+                            <div class="item-progress" data-percent="42">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+						</div> <!-- //.panel body -->
+						<div class="panel-footer">
+							<p>LAST UPDATE: DD/MM/YY</p>							
+						</div>
+				 </div>
+
 				 <!-- USER WIDGET -->
 				 <div id="user-widget" class="list-group">
 						<div class="list-group-item heading">
@@ -206,6 +280,9 @@
 							 <p class="list-group-item-text">Medical Records</p>
 						</a>
 				 </div>
+
+
+
 			</div>
 			<!-- /.column three -->
 	 </div>
@@ -232,6 +309,7 @@
 	<script src="js/modern-business.js"></script>
 	<!-- Custom scripts -->
 	<script src="js/bar-chart.js"></script>
+	<script src="js/column-chart.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.js"></script>	

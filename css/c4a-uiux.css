@@ -262,13 +262,13 @@ body {
     border-left: 1px solid #fff;
 }
 #pie-chart-widget .legend .Activity1 {   
-    border-top: 4px solid #4DAF7C; 
+    border-top: 4px solid #1e9dba; 
 }
 #pie-chart-widget .legend .Activity2 {
-    border-top: 4px solid #EAC85D;
+    border-top: 4px solid #b3b3b3;
 }
 #pie-chart-widget .legend .Activity3 {
-    border-top: 4px solid #E25331;
+    border-top: 4px solid #838383;
 }
 
 

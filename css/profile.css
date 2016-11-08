@@ -110,8 +110,7 @@ ul.user-menu-list {
     border: 1px solid #eee;
 }
 ul.user-menu-list>li {
-    padding-bottom: 8px;
-    text-align: center;
+    padding-bottom: 0px;
 }
 
 div.user-menu div.user-menu-content:not(.active){

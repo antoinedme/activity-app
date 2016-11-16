@@ -9,6 +9,8 @@ $(document).ready(function() {
         var index = $(this).index();
         $("div.user-menu>div.user-menu-content").removeClass("active");
         $("div.user-menu>div.user-menu-content").eq(index).addClass("active");
+
+       
     });
 });
 

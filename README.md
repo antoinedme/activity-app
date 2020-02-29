@@ -1,6 +1,9 @@
-## Docs:
+## Preview ADLs dashboard for participants:
+Client-side of the Ubismart platform (based on sails.js, node.js MVC framework with support of real-time features via socket.io)
 
-HTML + CSS + JS Mockup : client-side of the Ubismart platform (based on sails.js, node.js MVC framework with support of real-time features via socket.io)
+Activities of Daily Living metrics dashboard for users:
+![alt text](https://raw.githubusercontent.com/antoinedme/activity-app/master/img/activity-app-preview.png)
+
 
 ## Use of bar-chart.css:
 
